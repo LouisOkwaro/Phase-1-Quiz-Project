@@ -5,3 +5,6 @@ finalScore.innerText = mostRecentScore;
 username.addEventListener('keyup', () => {
     saveScoreBtn.disabled = !username.value;
 });
+
+localStorage.setItem('highScores', JSON.stringify(highScores));
+window.location.assign('/');
